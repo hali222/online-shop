@@ -30,11 +30,10 @@ public class OnlineShop {
 
 		float total = wk1.berechneSumme(kunde1);
 
-		System.out.println(
-				"Total amount of" + " " + kunde1.getVorname() + " " + kunde1.getName() + " " + "is" + " " + total);
+		System.out.println("Total amount of" + " " + kunde1.getVorname() + " " + kunde1.getName() + " " + "is" + " " + total);
 
 		Autor aut1 = new Autor("Adam", "Smith");
-		Autor aut2 = new Autor("Ali", "Nasirzada");
+		Autor aut2 = new Autor("Robert", "Bosch");
 		Autor aut3 = new Autor("Halima", "Zolfaghari");
 		Autor aut4 = new Autor("Sofia", "Schwatz", 23);
 
@@ -76,8 +75,6 @@ public class OnlineShop {
 		arKunde.add(kunde2);
 		arKunde.add(kunde3);
 		arKunde.add(kunde4);
-
-		// System.out.println("arkund" + arKunde.toString());
 
 		KundenVerwaltung kv = new KundenVerwaltung();
 		KundenVerwaltung kv1 = new KundenVerwaltung();
