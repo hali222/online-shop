@@ -42,15 +42,12 @@ public class OnlineShop {
 		buch1.setAutor(aut2);
 		buch2.setAutor(aut1);
 
-		// Das ist f�r �bung Lektion 2
 		Kunde kunde2 = new Kunde("Lion", "Sesam", "m�nnlich", "21.10.1972");
 		kunde2.ausgeben();
 		System.out.println(kunde2.equals(kunde1));
 		System.out.println(kunde2.toString());
 		System.out.println(kunde2.getClass());
-		System.out.println(kunde2.hashCode());
 		kunde1.ausgeben();
-		System.out.println(kunde1.hashCode());
 
 		Kunde kunde3 = new Kunde();
 		kunde3.setVorname("Annable");
@@ -79,10 +76,6 @@ public class OnlineShop {
 		KundenVerwaltung kv = new KundenVerwaltung();
 		KundenVerwaltung kv1 = new KundenVerwaltung();
 
-//		 kv.addKunde(kunde1);
-//		 kv.addKunde(kunde2);
-//		 kv.addKunde(kunde3);
-//		 kv.addKunde(kunde4);
 
 		kv.addKunden(arKunde);
 
@@ -90,7 +83,6 @@ public class OnlineShop {
 
 		System.out.println("This is my vorname : " + kv.getKunden().get(1).getVorname());
 
-		// kv.getKunde("Lion");
 		System.out.println("This is my Kunde " + kv.getKunde("Anna"));
 
 		ArrayList<Kunde> weibKunden = kv.getWeiblicheKunden(kv.getKunden());
